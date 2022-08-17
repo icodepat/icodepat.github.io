@@ -3815,7 +3815,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Cnds.IsMoving,
 		C3.Behaviors.Platform.Cnds.OnJump,
 		C3.Plugins.Sprite.Cnds.OnCollision,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Audio.Acts.UnloadAudio
 	];
 };
 self.C3_JsPropNameTable = [
