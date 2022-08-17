@@ -3816,7 +3816,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Cnds.OnJump,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Audio.Acts.UnloadAudio
+		C3.Plugins.Audio.Acts.UnloadAudio,
+		C3.Behaviors.Platform.Acts.SetDoubleJumpEnabled,
+		C3.Plugins.Sprite.Acts.SetPos
 	];
 };
 self.C3_JsPropNameTable = [
@@ -3836,7 +3838,12 @@ self.C3_JsPropNameTable = [
 	{solid_tiles2: 0},
 	{thru_tiles2: 0},
 	{sr26cba67f65d0a: 0},
-	{levelup_tiles2: 0}
+	{levelup_tiles2: 0},
+	{a97debff38d5efe: 0},
+	{background: 0},
+	{solid_tiles3: 0},
+	{kill_tiles3: 0},
+	{troll_tiles3: 0}
 ];
 }
 
@@ -3942,7 +3949,10 @@ self.C3_ExpressionFuncs = [
 		() => "walk",
 		() => "jump",
 		() => "idle",
-		() => -10
+		() => -10,
+		() => 7,
+		() => 286,
+		() => 685
 ];
 
 
